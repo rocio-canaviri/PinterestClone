@@ -1,0 +1,10 @@
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-icon-home>img {
+    width: 24px;
+}
