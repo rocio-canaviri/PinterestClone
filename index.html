@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilos -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
 
-	<!-- estilos -->
-	<link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/main.css">
+    <link rel="short icon" href="img/icon_pinterest.png" type="image/type-x" />
 
-  <link rel="short icon" href="img/icon_pinterest.png" type="image/type-x">
+    <title>Pinterest</title>
+  </head>
 
-	<title>Pinterest</title>
-</head>
+  <body>
+    <header>
+      <a class="icon icon-home" href="#">
+        <div></div>
+      </a>
+      
+      <a class="a-header a-header-black" href="#">Inicio</a>
+      <a class="a-header a-header-white" href="#">hoy</a>
+      <a class="a-header a-header-white" href="#">siguiendo</a>
 
-<body>
+      <form action="/buscar/" method="get">
+        <input type="search" name="buscar" id="buscar" />
+      </form>
 
-	<header>
-		<a class="header-icon-home" href="#">
-			<img src="/img/icon_pinterest.png" alt="icono pinterest home">
-        </a>
-        <a href="#">inicio</a>
-        <a href="#">hoy</a>
-        <a href="#">siguiendo</a>
-
-        <form action="/buscar/" method="get">
-            <input type="search" name="buscar" id="buscar">
-        </form>
-
-        <button>notificaciones</button>
-        <button>mensajes</button>
-        <a href="#">perfil</a>
-        <button>menu</button>
+      <button class="icon icon-notification">
+        <div></div>
+      </button>
+      <button class="icon icon-message">
+        <div></div>
+      </button>
+      <a class="icon icon-profile" href="#">
+        <div>
+          <img src="/img/icon_profile.jpg" alt="" />
+        </div>
+      </a>
+      <button class="icon icon-menu">
+        <div></div>
+      </button>
     </header>
-    
+
     <main>
-        seccion principal
+      seccion principal
     </main>
-</body>
+  </body>
 </html>

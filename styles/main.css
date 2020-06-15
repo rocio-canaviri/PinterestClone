@@ -1,10 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Creamos algunas variables en css */
+:root {
+  --fuente: "Roboto", sans-serif;
+  --gris: #efefef;
+  --width-icon: 1.5rem;
+  --height-icon: 1.5rem;
 }
 
-.header-icon-home>img {
-    width: 24px;
+/* Definimos una medida estandar para 1 rem */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--fuente);
+}
+
+/* Usamos cajas flexibles para alinear todos los elementos del header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1rem;
+}
+
+/* Creamos el icono home de Pinterest */
+.icon {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.icon:hover {
+  background-color: var(--gris);
+}
+
+.icon > div {
+  width: var(--width-icon);
+  height: var(--height-icon);
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+/* Definimos una imagen como fondo. Esta es otra forma de integrar iconos */
+.icon-home > div {
+  background-image: url("/img/icon_pinterest.png");
+}
+
+/* Eliminamos el estilo que se aplica sobre los enlaces por defecto */
+a {
+  text-decoration: none;
+}
+
+/* Aplicamos estilos personalizados sobre los enlaces */
+.a-header {
+  padding: 1rem 1.2rem;
+  border-radius: 1.5rem;
+}
+
+.a-header-black {
+  background-color: black;
+  color: white;
+}
+
+.a-header-white {
+  background-color: white;
+  color: black;
+}
+
+.a-header-white:hover {
+  background-color: var(--gris);
+}
+
+/* Eliminamos el estilo que se aplica sobre los botones por defecto */
+
+button {
+  border: none;
+  background-color: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Aplicamos fondos sobre el resto de los botones */
+.icon-notification > div {
+  background-image: url("/img/icon_jingle.png");
+}
+
+.icon-message > div {
+  background-image: url("/img/icon_bubble_notification_2.png");
+}
+
+.icon-menu > div {
+  background-image: url("/img/icon_arrow_down.png");
+}
+
+/* Existen varias formas de centrar una imagen en un enlace. 
+En este caso, simplemente encierro la imagen dentro de un div */
+.icon-profile > div > img {
+  width: 100%;
+  border-radius: 50%;
 }
