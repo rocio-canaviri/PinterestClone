@@ -105,3 +105,42 @@ En este caso, simplemente encierro la imagen dentro de un div */
   width: 100%;
   border-radius: 50%;
 }
+
+/* Aplicamos estilos sobre el buscador principal */
+
+/* Eliminamos el estilo que se aplica sobro los input por defecto */
+
+form > input {
+  border: none;
+}
+
+form > input:focus {
+  outline: none;
+}
+
+.search {
+  background-color: var(--gris);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  /* Solicitamos mediante flex que se ocupe todo el espacio libre disponible */
+  flex-grow: 1;
+
+  /* Hacemos una caja flexible para alinear todos los elementos */
+  display: flex;
+}
+
+.search > input {
+  background-color: var(--gris);
+  width: 100%;
+}
+
+.search > div {
+  width: var(--width-icon);
+  height: var(--height-icon);
+  background-position: center;
+  background-size: contain;
+  background-image: url("/img/icon_search.png");
+}
