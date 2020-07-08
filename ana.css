@@ -50,7 +50,7 @@ header {
 
 /* Definimos una imagen como fondo. Esta es otra forma de integrar iconos */
 .icon-home > div {
-  background-image: url("/img/icon_pinterest.png");
+  background-image: url("../img/icon_pinterest.png");
 }
 
 /* Eliminamos el estilo que se aplica sobre los enlaces por defecto */
@@ -91,15 +91,15 @@ button:focus {
 
 /* Aplicamos fondos sobre el resto de los botones */
 .icon-notification > div {
-  background-image: url("/img/icon_jingle.png");
+  background-image: url("../img/icon_jingle.png");
 }
 
 .icon-message > div {
-  background-image: url("/img/icon_bubble_notification_2.png");
+  background-image: url("../img/icon_bubble_notification_2.png");
 }
 
 .icon-menu > div {
-  background-image: url("/img/icon_arrow_down.png");
+  background-image: url("../img/icon_arrow_down.png");
 }
 
 /* Existen varias formas de centrar una imagen en un enlace. 
@@ -145,7 +145,7 @@ form > input:focus {
   height: var(--height-icon);
   background-position: center;
   background-size: contain;
-  background-image: url("/img/icon_search.png");
+  background-image: url("../img/icon_search.png");
 }
 /*main*/
 .imageprofile {
