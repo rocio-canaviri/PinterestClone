@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+:root {
+  --fuente: "Roboto", sans-serif;
+  --gris: #efefef;
+  --width-icon: 1.5rem;
+  --height-icon: 1.5rem;
+
+  --margin-section: 1rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--fuente);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: var(--margin-section);
+}
+
+/* Creamos el icono home de Pinterest */
+.icon {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.icon:hover {
+  background-color: var(--gris);
+}
+
+.icon > div {
+  width: var(--width-icon);
+  height: var(--height-icon);
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+/* Definimos una imagen como fondo. Esta es otra forma de integrar iconos */
+.icon-home > div {
+  background-image: url("img.rocio/icon_pinterest.png");
+}
+
+/* Eliminamos el estilo que se aplica sobre los enlaces por defecto */
+a {
+  text-decoration: none;
+}
+
+/* Aplicamos estilos personalizados sobre los enlaces */
+.a-header {
+  padding: 1rem 1.2rem;
+  border-radius: 1.5rem;
+}
+
+.a-header-black {
+  background-color: black;
+  color: white;
+}
+
+.a-header-white {
+  background-color: white;
+  color: black;
+}
+
+.a-header-white:hover {
+  background-color: var(--gris);
+}
+
+/* Eliminamos el estilo que se aplica sobre los botones por defecto */
+
+button {
+  border: none;
+  background-color: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Aplicamos fondos sobre el resto de los botones */
+.icon-notification > div {
+  background-image: url("img.rocio/icon_jingle.png");
+}
+
+.icon-message > div {
+  background-image: url("img.rocio/icon_bubble_notification_2.png");
+}
+
+.icon-menu > div {
+  background-image: url("img.rocio/icon_arrow_down.png");
+}
+
+/* Existen varias formas de centrar una imagen en un enlace. 
+En este caso, simplemente encierro la imagen dentro de un div */
+.icon-profile > div > img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Aplicamos estilos sobre el buscador principal */
+
+/* Eliminamos el estilo que se aplica sobro los input por defecto */
+
+form > input {
+  border: none;
+}
+
+form > input:focus {
+  outline: none;
+}
+
+.search {
+  background-color: var(--gris);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+
+  /* Solicitamos mediante flex que se ocupe todo el espacio libre disponible */
+  flex-grow: 1;
+
+  /* Hacemos una caja flexible para alinear todos los elementos */
+  display: flex;
+}
+
+.search > input {
+  background-color: var(--gris);
+  width: 100%;
+}
+
+.search > div {
+  width: var(--width-icon);
+  height: var(--height-icon);
+  background-position: center;
+  background-size: contain;
+  background-image: url("img.rocio/icon_search.png");
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+}
+
+.main-perfil {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+} 
+
+.nombre-usuario {
+  display: flex;
+  justify-content: center;
+  color:black;
+  font-size: 36px;
+
+  margin-top: 8px;
+}
+
+.div-siguiendo {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 16px;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.a-main {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-botones {
+  display: flex;
+  justify-content: space-between;
+  margin: none;
+
+  margin-left: 16px;
+  margin-right: 16px;  
+  margin-top: 12px;
+}
+
+.boton-tableros {
+  display: flex;
+  background-color: black;
+  border-radius: 999px;
+  height: 48px;
+  min-width: 60px;
+  color: white;
+  font-size: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 16px;
+
+  align-items: center;
+}
+
+.boton-pines {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  row-gap: 40px;
+  justify-items: center;
+
+}
+
+.imagen {
+  border-radius: 8%;
+  margin-right: 16px;
+}
+
+.texto {
+  color: white;
+  background-color: black;
+  border-radius: 999px;
+  min-height: 40px;
+  min-width: 60px;
+  text-align: center;
+  margin-top: 5px;
+  width: 175px;
+  height: 16px;
+}
+.texto-seguir {
+  color: black;
+  background-color: #efefef ;
+  border-radius: 999px;
+  min-height: 40px;
+  min-width: 60px;
+  text-align: center;
+  margin-top: 5px;
+  width: 175px;
+  height: 16px;
+
+}
+
+.seccion {
+  font-size: 8px; 
+}
+
+
+
+
